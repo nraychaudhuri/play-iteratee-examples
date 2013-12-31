@@ -1,0 +1,6 @@
+@(message: String)(implicit req: RequestHeader)
+
+@main("Welcome to Play 2.1") {
+<input type="hidden" id="ws-url" value="@routes.Application.events().webSocketURL()"/>    
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>    
+}
